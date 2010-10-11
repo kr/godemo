@@ -1,0 +1,16 @@
+
+                                  Duck Typing
+                                  (idiomatic)
+
+    # Ruby            // Go
+                      type Closer interface { // convention: method name + "er"
+                          Close()
+                      }
+
+    def cleanup(x)    func cleanup(x interface{}) {
+      x.close             x.(Closer).Close()
+    end               }
+
+    a = [x]           a := []interface{}{x}
+    y = a[0]          y := a[0]
+    y.close           y.(Closer).Close()

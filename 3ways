@@ -1,0 +1,22 @@
+
+                  "If you do need concurrency, you have 3 ways
+                   to deal with it.
+
+                  "Isolation, immutability and locking. You
+                   only need one."[0]
+
+
+    * Locking is often discouraged as being too hard to use properly, but once
+      in a while it's the right (i.e. easiest) approach.
+
+    * Erlang (last I heard) forces you to use both immutability *and*
+      isolation. This makes it slower than it needs to be.
+
+    * Go makes isolation convenient, but allows you to use any of these three
+      as you see fit.
+
+    * Go, like Unix, doesn't try to prevent you from doing stupid things,
+      because that would also prevent you from doing clever things.
+
+[0]: http://measuringmeasures.com/blog/2010/9/13/
+       concurrency-state-and-functional-programming.html

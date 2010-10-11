@@ -1,0 +1,16 @@
+
+                                 Static Typing
+
+
+    # Ruby            // Go
+                      type Closer interface { // convention: method name + "er"
+                          Close()
+                      }
+
+    def cleanup(x)    func cleanup(x Closer) {
+      x.close             x.Close()
+    end               }
+
+    a = [x]           a := []Closer{x}
+    y = a[0]          y := a[0]
+    y.close           y.Close()

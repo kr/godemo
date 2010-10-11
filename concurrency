@@ -1,0 +1,15 @@
+
+                                  Concurrency
+
+    * I told a little white lie earlier, when I said that everything happens in
+      one OS process.
+
+    * Go actually provides true concurrency. It multiplexes many goroutines
+      onto a few OS processes with a single shared address space (i.e.
+      threads).
+
+    * Implementation detail: Go's current scheduler is simple and dumb; you
+      have to tell it how many processes it can use. The default is 1.
+
+      In the future, they will write a smarter scheduler that will do this
+      automatically.

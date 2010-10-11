@@ -1,0 +1,16 @@
+
+                                  Duck Typing
+                                   (literal)
+
+    # Ruby            // Go
+
+
+
+
+    def cleanup(x)    func cleanup(x interface{}) {
+      x.close             x.(interface{Close()}).Close()
+    end               }
+
+    a = [x]           a := []interface{}{x}
+    y = a[0]          y := a[0]
+    y.close           y.(interface{Close()}).Close()

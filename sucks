@@ -1,0 +1,20 @@
+
+What's wrong with static type checking?
+
+    1. Writing out all those declarations.
+
+    2. Gets in the way.
+
+"All static type checking sucks. This one just sucks less."[0]
+
+    * Go tries to reduce stuttering (foo.Foo* myFoo = new(foo.Foo)):
+
+        var x int = 0    ==>    x := 0
+
+      Helps a bit with #1 above.
+
+    * Embedding/delegation rather than inheritance simplifies things.
+
+    * Interfaces help with #2 above...
+
+[0]: paraphrased from http://www.mutt.org/

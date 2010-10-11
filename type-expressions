@@ -1,0 +1,24 @@
+
+                                Type Expressions
+
+    int, byte, string, etc.
+    []<type>                            []string
+    map[<type>]<type>                   map[string]int
+    func<sig>                           func(int) string
+    struct{ <name> <type>, ... }        struct{ id int, name string }
+    interface{ <name><sig>; ... }       interface{ Foo(int) string }
+
+    map[int]interface{ X(func(struct{ a int }) interface{}) int }
+
+Give it a Name:
+
+    type <name> <type>
+
+    type Dog struct {
+        id   int
+        name string
+    }
+
+    type Stringer interface {
+        String()
+    }
