@@ -1,22 +1,16 @@
 
-                                  Introduction
+                                    Language
 
 
-    * Systems programming language (like C and C++) -- OS level programming,
+    * System programming language (like C and C++) -- OS level programming,
       kernel syscalls, designed for writing system software (like web servers,
       databases, compilers, etc). Gives control over memory layout of
       structures. Also provides a Unix-style interface to the OS.
-
-    * Uses C. A. R. Hoare's communicating sequential processes (CSP) model.
 
     * Relatives: C, Alef, Limbo, Squeak (not Squeak Smalltalk), Newsqueak, also
       some ideas from Pascal.
 
     * Memory safety, garbage collection, lambda forms and closures, array,
       slice and map (dictionary).
-
-    * May feel somewhat familiar if you've used Erlang, *except* that message
-      passing between Go's equivalent of "processes" is synchronous, and Go
-      allows mutation (not purely, or even mostly, functional).
 
     * Obvious syntax...

@@ -1,0 +1,13 @@
+
+                                      Why?
+
+
+    * Semaphores-with-shared-state model sucks.
+
+    * Event-driven programming also sucks.
+
+    * What can we do?
+
+    * C. A. R. Hoare's CSP
+
+    * Unix shell pipeline

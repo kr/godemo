@@ -11,8 +11,6 @@
 
     * Does what you think.
 
-    * This is how goroutines communicate with each other.
-
     * Synchronous.
 
     * Unbuffered (or optionally buffered).

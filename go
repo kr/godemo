@@ -19,6 +19,3 @@
       context), pause f, resume main, and continue switching back and forth.
       Each context is called a *goroutine*. When the top function in a
       goroutine returns, the goroutine vanishes.
-
-    * This difference makes Go much easier than Javascript to use when mixing
-      synchronous and asynchronous code.
