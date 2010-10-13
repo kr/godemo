@@ -13,4 +13,9 @@
     * Memory safety, garbage collection, lambda forms and closures, array,
       slice and map (dictionary).
 
+    * Go, like Unix, doesn't try to prevent you from doing stupid things,
+      because that would also prevent you from doing clever things.
+
+    * Shared address space, mutexes, etc.
+
     * Obvious syntax...
