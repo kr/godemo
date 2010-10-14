@@ -1,0 +1,20 @@
+
+                                Small Interfaces
+
+
+    * Go types don't list supported interfaces explicitly. This small change
+      makes the system have a totally different feel.
+
+    * Each Java class has to list out all interfaces. This is a strong
+      motivator to have few interfaces total. So each interface tends to be
+      bigger.
+
+    * Big, heavyweight interfaces != happy programmers.
+
+    * Go is the opposite. Typical Go interface has just one method in it. Lots
+      of interfaces all over the place. Keeps the code flexible and easy to
+      work with.
+
+    * Also, you can define an interface after a type has already been defined,
+      without having to patch that type's definition. Good for stuff you can't
+      easily patch, like the standard lib.

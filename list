@@ -8,8 +8,10 @@ go
 chan
 example.go
 
+start2
 async
 
+start3
 types
 type-expressions
 sucks
@@ -18,7 +20,9 @@ duck-idiomatic
 static
 sort.go
 vector.go
+small-interfaces
 
+start4
 concurrency
 3ways
 isolation.go
