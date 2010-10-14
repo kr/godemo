@@ -15,6 +15,7 @@ server.go
 start3
 types
 type-expressions
+type-assertions
 sucks
 duck
 duck-idiomatic

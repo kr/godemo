@@ -12,7 +12,7 @@
       in a while it's the right (i.e. easiest) approach.
 
     * Erlang (last I heard) forces you to use both immutability *and*
-      isolation. This makes it slower than it needs to be.
+      isolation.
 
     * Go makes isolation convenient, but allows you to use any of these three
       as you see fit.

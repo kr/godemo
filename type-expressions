@@ -7,6 +7,7 @@
     func<sig>                           func(int) string
     struct{ <name> <type>, ... }        struct{ id int, name string }
     interface{ <name><sig>; ... }       interface{ Foo(int) string }
+    *<type>                             *int
 
     map[int]interface{ X(func(struct{ a int }) interface{}) int }
 
@@ -18,6 +19,8 @@ Give it a Name:
         id   int
         name string
     }
+
+    type Errno int
 
     type Stringer interface {
         String()

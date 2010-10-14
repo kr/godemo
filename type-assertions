@@ -1,0 +1,24 @@
+
+                                Type Assertions
+
+    * Looks like this:
+
+        <expr>.(<type>)
+
+    * Given:
+
+        x := interface{}(0) // dynamic type is int; static type is interface{}
+
+    * With "comma ok" idiom:
+
+        i, ok := x.(int) // static type is int; i is nil if !ok
+
+      Commonly seen as:
+
+        if i, ok := x.(int); ok {
+            // work with i
+        }
+
+    * Plain:
+
+        i := x.(int) // static type is int; could panic

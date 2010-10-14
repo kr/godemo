@@ -1,8 +1,20 @@
 
                                      Types
 
-primitives, slices, maps
-structs
-interfaces
-type expressions
-type assertions
+    * Numbers (int, uint, byte, int64, etc), string
+
+    * Arrays -- fixed size at compile time
+
+    * Slices -- fixed size at run time
+
+    * If you need dynamic resizing (like a Ruby Array), use the vector package.
+      We'll look at this in a minute.
+
+    * Maps
+
+    * Pointers -- like in C, but no pointer arithmetic
+
+    * Structs -- like in C
+
+    * Interfaces -- like in Java, *except* you don't explicitly declare that
+      you implement an interface.
