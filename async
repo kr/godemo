@@ -1,2 +1,7 @@
 
                                    Asynchrony
+
+
+    * Most libraries present a blocking interface by default.
+
+    * Go makes it easy to add asynchrony if you need it.
