@@ -56,11 +56,15 @@ func Serve(c net.Conn) {
 }
 
 func main() {
-	l, _ := net.Listen("tcp", ":1234")
+	l, err := net.Listen("tcp", ":1234")
+	if err != nil {
+		panic(err)
+	}
 
 	for {
 		c, err := l.Accept()
 		if err != nil {
+			fmt.Println(err)
 			continue
 		}
 
