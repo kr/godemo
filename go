@@ -15,7 +15,7 @@
       reutrn all the way up the stack, the top level event loop will pick the
       next thing and start it.
 
-    * Go: can pause main, start f with its own call stack (plus a little other
-      context), pause f, resume main, and continue switching back and forth.
-      Each context is called a *goroutine*. When the top function in a
-      goroutine returns, the goroutine vanishes.
+    * Go: can pause main, start f with its own call stack, pause f, resume
+      main, and continue switching back and forth. Each context is called a
+      *goroutine*. When the top function in a goroutine returns, the goroutine
+      vanishes.
