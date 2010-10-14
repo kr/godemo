@@ -7,11 +7,11 @@
 
     * Given:
 
-        x := interface{}(0) // dynamic type is int; static type is interface{}
+        x := interface{}(1) // dynamic type is int; static type is interface{}
 
     * With "comma ok" idiom:
 
-        i, ok := x.(int) // static type is int; i is nil if !ok
+        i, ok := x.(int) // static type is int; i is 0 if !ok
 
       Commonly seen as:
 
