@@ -45,6 +45,7 @@ func Serve(c net.Conn) {
 			reply = "unknown command\r\n"
 		}
 
+
 		for len(reply) > 0 {
 			n, err := io.WriteString(c, reply)
 			if err != nil { // e.g. EOF
