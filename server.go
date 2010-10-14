@@ -32,6 +32,7 @@ func Serve(c net.Conn) {
 
 		switch {
 		case strings.HasPrefix(line, "put "):
+			// a goroutine's initial stack size is 1KB
 			go func(s string) {
 				queue <- s // blocks
 			}(line[4:])
